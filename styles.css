@@ -54,29 +54,25 @@ div[w3-include-html] {
 
 /* Horizontal menu container */
 /* Horizontal menu container - compact and left-aligned */
+/* Horizontal menu container – simple, top of page */
 .horizontal-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
   background-color: gainsboro;
-  font-size: 0.75rem;             /* Smaller font */
-  padding: 4px 10px;              /* Compact padding */
+  font-size: 0.8rem;              /* Small, readable font */
+  padding: 6px 10px;              /* Light padding around items */
   display: flex;
-  flex-wrap: nowrap;              /* Single row, no wrapping */
   justify-content: flex-start;    /* Left-align items */
-  gap: 10px;                      /* Small gap between items */
+  gap: 12px;                      /* Spacing between items */
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  overflow-x: auto;               /* Allow horizontal scrolling if overflow */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
 }
 
-/* Remove default list style */
+/* Remove bullets and default list styling */
 .horizontal-menu li {
   list-style: none;
   margin: 0;
-  padding: 4px 6px;               /* Tighter padding for compact look */
+  padding: 4px 6px;
 }
 
 /* Menu links */
@@ -84,16 +80,10 @@ div[w3-include-html] {
   text-decoration: none;
   color: #333;
   font-weight: normal;
-  white-space: nowrap;            /* Prevent wrapping inside each link */
+  white-space: nowrap;
   transition: color 0.3s;
 }
 
 .horizontal-menu li a:hover {
   color: #0077cc;
 }
-
-/* Offset content below the fixed menu */
-body {
-  padding-top: 45px; /* Adjust this depending on the menu height */
-}
-
