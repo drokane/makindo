@@ -54,16 +54,15 @@ div[w3-include-html] {
 
 /* Horizontal menu styling */
 .horizontal-menu {
-  list-style-type: none !important;
-  margin: 20px auto;                 /* Space above/below + center */
-  padding: 10px 0;                   /* Inner padding */
-  display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  border: 2px solid #004080;         /* Visible border */
-  border-radius: 8px;                /* Rounded corners */
-  max-width: 800px;                  /* Optional: keeps it neat */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0; /* Remove rounding if full-width */
+}
+body {
+  padding-top: 70px; /* Prevent menu overlapping content */
 }
 
 /* Horizontal menu list items */
