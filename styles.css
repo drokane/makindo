@@ -1,4 +1,4 @@
- /* General body styles */
+/* General body styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -43,7 +43,7 @@ li {
   border-left: 5px solid #004080;
   padding: 15px 20px;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* Ensure included menu area spans full width */
@@ -53,13 +53,29 @@ div[w3-include-html] {
 
 /* Horizontal menu styling */
 .horizontal-menu {
-  list-style-type: none !important; /* Override the global tick */
+  list-style-type: none !important; /* Override global ✅ ticks */
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content
+  justify-content: space-around; /* Space evenly */
+  background-color: #333;
+}
 
+/* Horizontal menu list items */
+.horizontal-menu li {
+  margin: 0;
+  padding: 14px 20px;
+}
+
+/* Menu links */
+.horizontal-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
 .horizontal-menu li a:hover {
   color: #ffcc00;
 }
+
