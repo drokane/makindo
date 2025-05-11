@@ -35,3 +35,33 @@
       margin-bottom: 30px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
     }
+div[w3-include-html] {
+  width: 100%;
+}
+
+/* Remove bullet points and arrange horizontally */
+.horizontal-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* or use space-between / center */
+  background-color: #333;
+}
+
+/* Style each list item */
+.horizontal-menu li {
+  padding: 14px 20px;
+}
+
+/* Style the links */
+.horizontal-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.horizontal-menu li a:hover {
+  color: #ffcc00;
+}
