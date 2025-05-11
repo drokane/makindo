@@ -52,33 +52,39 @@ div[w3-include-html] {
   width: 100%;
 }
 
-/* Horizontal menu styling */
+/* Horizontal menu container */
 .horizontal-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  border-radius: 0; /* Remove rounding if full-width */
-}
-body {
-  padding-top: 70px; /* Prevent menu overlapping content */
+  border-radius: 0;
+  background-color: gainsboro;  /* Light grey background */
+  font-size: 0.85rem;            /* Smaller font size */
+  padding: 5px 0;                /* Compact vertical padding */
+  display: flex;
+  flex-wrap: wrap;               /* Allow items to wrap if needed */
+  justify-content: center;      /* Centre items horizontally */
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Horizontal menu list items */
+/* Menu list items */
 .horizontal-menu li {
-  margin: 0;
-  padding: 14px 20px;
+  margin: 0 10px;                /* Small horizontal spacing */
+  padding: 8px 10px;             /* Smaller padding for compactness */
+  list-style: none;              /* No bullets */
 }
 
 /* Menu links */
 .horizontal-menu li a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #333;                   /* Dark text on light background */
+  font-weight: normal;
   transition: color 0.3s;
 }
 
 .horizontal-menu li a:hover {
-  color: #ffcc00;
+  color: #0077cc;                /* Blue hover for contrast */
 }
