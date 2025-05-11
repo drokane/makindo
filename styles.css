@@ -37,6 +37,7 @@ li {
   color: #007700;
 }
 
+/* Box styling for subject sections */
 .subject-block {
   background: #ffffff;
   border: 1px solid #d0d0d0;
@@ -53,12 +54,16 @@ div[w3-include-html] {
 
 /* Horizontal menu styling */
 .horizontal-menu {
-  list-style-type: none !important; /* Override global ✅ ticks */
-  margin: 0;
-  padding: 0;
+  list-style-type: none !important;
+  margin: 20px auto;                 /* Space above/below + center */
+  padding: 10px 0;                   /* Inner padding */
   display: flex;
-  justify-content: space-around; /* Space evenly */
+  justify-content: space-around;
   background-color: #333;
+  border: 2px solid #004080;         /* Visible border */
+  border-radius: 8px;                /* Rounded corners */
+  max-width: 800px;                  /* Optional: keeps it neat */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
 }
 
 /* Horizontal menu list items */
@@ -78,4 +83,3 @@ div[w3-include-html] {
 .horizontal-menu li a:hover {
   color: #ffcc00;
 }
-
